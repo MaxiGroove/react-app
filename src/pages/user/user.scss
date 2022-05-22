@@ -1,0 +1,56 @@
+.user {
+
+    &-column:not(:last-child) {
+        border-right: 1px solid #b5b5b5;
+    }
+
+    &-info {
+        width: 300px;
+        margin-right: 20px;
+    }
+    &-photo {
+        margin-bottom: 20px;
+        width: 186px;
+        height: 186px;
+        overflow: hidden;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        background-image: conic-gradient(#FF6161, #7B61FF, #FF6161, #7B61FF, #FF6161, #7B61FF, #FF6161);
+
+        &-avatar {
+            width: 100%;
+            height: auto;
+            min-height: 186px;
+            min-width: 186px;
+            background: #ffffff;
+        }
+    }
+
+    &-about {
+
+        &-title {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #cccccc;
+            margin-bottom: 5px;
+        }
+
+        &-text {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #333333;
+        }
+    }
+
+    &-tasks {
+        margin-left: 20px;
+
+        &-wrap {
+            width: 899px;
+            padding: 1px;
+            overflow: hidden;
+            box-shadow: inset 0px 0px 2px 1px #B5B5B5;
+            border-radius: 5px;
+        }
+    }
+}

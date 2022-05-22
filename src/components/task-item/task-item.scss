@@ -1,0 +1,241 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 22px 30px;
+
+    &:nth-child(2n) {
+        background-color: rgb(230, 230, 230);
+    }
+
+    &-type {
+        padding-right: 44px;
+    }
+
+    &-name {
+        
+        &-text {
+            width: 527px;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #000000;
+        }
+    }
+
+    &-user {
+
+        &-text {
+            width: 180px;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #000000;
+        }
+    }
+
+    &-status {
+        width: 120px;
+    }
+
+    &-more {
+        padding-left: 75px;
+    }
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+
+    &:hover {
+        background: #7B61FF;
+        border-radius: 5px;
+    }
+    &:hover &-control {
+        display: block;
+    }
+
+    &-inner {
+        position: relative;
+        width: 10px;
+        height: 2px;
+        background: #7B61FF;
+        border-radius: 1px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: 0;
+            width: 10px;
+            height: 2px;
+            background: #7B61FF;
+            border-radius: 1px;
+        }
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 10px;
+            height: 2px;
+            background: #7B61FF;
+            border-radius: 1px;
+        }
+    }
+    &:hover &-inner,
+    &:hover &-inner::before,
+    &:hover &-inner::after {
+        background-color: #ffffff;
+    }
+
+    &-control {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: -5px;
+        z-index: 1000;
+        padding: 2px 0px;
+        font-size: 1.2rem;
+        width: 105px;
+        background: #ffffff;
+        box-shadow: 0px 0px 2px 2px rgba(123, 97, 255, 0.5);
+        border-radius: 5px;
+    }
+
+    &-link {
+        display: block;
+        text-align: left;
+        width: 100%;
+        cursor: pointer;
+        padding: 0px 5px;
+        padding-bottom: 4px;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color: #333333;
+
+        &:hover {
+            background-color: #E6E1FF;
+        }
+    }
+
+    &-delete {
+        color: #FF6161;
+    }
+}
+
+
+.priority {
+    position: relative;
+    width: 120px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding-left: 18px;
+    
+    &-low {
+        color: #3CA961;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 14px;
+            height: 8px;
+            background-image: url('../../../public/images/priority-low.png');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &-medium {
+        color: #E9B500;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 14px;
+            height: 8px;
+            background-image: url('../../../public/images/priority-mid.png');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &-high {
+        color: #D14343;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 14px;
+            height: 8px;
+            background-image: url('../../../public/images/priority-high.png');
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.type {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #ffffff;
+    }
+
+    &-task {
+        background-color: #00D1FF;
+    }
+
+    &-bug {
+        background-color: #EB4F4F;
+    }
+}
+
+.status {
+    display: inline-block;
+    padding: 2px 10px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    height: 20px;
+    border-radius: 5px;
+
+    &-opened {
+        background-color: #cccccc;
+        border: 1px solid #333333;
+    }
+    
+    &-inProgress,
+    &-testing {
+        color: #846F00;
+        background: #FFC700;
+        border: 1px solid #846F00;
+    }
+
+    &-complete {
+        color: #157536;
+        background: #4BD379;
+        border: 1px solid #157536;
+    }
+
+    &-error {
+        color: #6D1313;
+        background: #EB4F4F;
+        border: 1px solid #6D1313;
+    }
+}

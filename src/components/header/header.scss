@@ -1,0 +1,112 @@
+.main__header {
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 1440px;
+        height: 60px;
+    }
+
+    &-group-link {
+        display: flex;
+        height: inherit;
+    }
+
+    &-lnk {
+        display: flex;
+        align-items: center;
+        font-family: 'Open Sans';
+        font-size: 2.4rem;
+        line-height: 3.3rem;
+        color: #333333;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+
+        &:first-child {
+            padding-right: 10px;
+        }
+
+        &:hover {
+            color: #7B61FF;
+        }
+
+        &-active {
+            border-color:#7B61FF;
+        }
+    }
+
+    &-profile {
+        display: flex;
+        align-items: center;
+        position: relative;
+        text-decoration: none;
+
+        &-name {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color:  #000000;
+            padding-right: 10px;
+        }
+
+
+        &-photo {
+            width: 42px;
+            height: 42px;
+            overflow: hidden;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            background-image: conic-gradient(#FF6161, #7B61FF, #FF6161, #7B61FF, #FF6161, #7B61FF, #FF6161);           
+        }
+
+        &-avatar {
+            width: 100%;
+            height: auto;
+            min-height: 42px;
+            min-width: 42px;
+            background: #ffffff;
+        }
+
+        &:hover &-menu {
+            display: flex;
+        }
+
+        &-menu {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            width: 136px;
+            top: 42px;
+            right: 0;
+            z-index: 1000;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            padding: 5px;
+            background: #ffffff;
+            box-shadow: 0px 0px 2px 2px rgba(123, 97, 255, 0.5);
+            border-radius: 5px; 
+        }
+
+        &-view {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        &-logout {
+            color: #FF6161;
+            text-decoration: none;
+        }
+    }
+}
+
+.link-disabled {
+    display: none;
+}

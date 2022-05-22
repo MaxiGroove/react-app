@@ -1,0 +1,38 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    &-left {
+        max-width: 1100px;
+    }
+
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &-item {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    &-btn {
+        margin-right: 5px;
+        padding: 2.5px 7.5px ;
+    }
+
+    &-text {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        color: #b5b5b5;
+    }
+}
+
+.btn {
+
+    &-back {
+        padding: 2.5px 10px;
+    }
+}

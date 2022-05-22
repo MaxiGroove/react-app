@@ -1,0 +1,42 @@
+.user {
+    display: flex;
+
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 24.5px 30px;
+
+        &:hover {
+            background: rgba(123, 97, 255, 0.2);
+        }
+
+        &:hover .user-delete{
+            display: block;
+        }
+    }
+
+    &-item:nth-child(2n) {
+        background: #F2F2F2;
+
+        &:hover {
+            background: rgba(123, 97, 255, 0.2);
+        }
+    }
+
+    &-name {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: #000000;
+    }
+
+    &-delete {
+        display: none;
+        height: 100%;
+        font-size: 1.6rem;
+        color: red;
+
+        &:hover {
+            background: #000;
+        }
+    }
+}

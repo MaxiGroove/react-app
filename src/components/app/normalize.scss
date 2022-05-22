@@ -1,0 +1,45 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body,
+h1,
+h2,
+ul,
+li,
+p,
+a,
+fieldset,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+fieldset {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}

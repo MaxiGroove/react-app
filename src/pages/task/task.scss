@@ -1,0 +1,119 @@
+.card {
+    display: flex;
+    
+
+    &-column:not(:last-child) {
+        border-right: 1px solid #b5b5b5;
+    }
+
+    &-info {
+        width: 300px;
+        margin-right: 20px;
+
+        &-user {
+            margin-bottom: 5px;
+        }
+    }
+
+    &-user {
+        
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        
+        &-title {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #cccccc;
+            padding-bottom: 5px;
+        }
+
+        &-name {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #333333;
+        }
+    }
+
+    &-description {
+        width: 400px;
+        margin: 0 20px;
+
+        &-title {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #cccccc;
+            padding-bottom: 5px;
+        }
+
+        &-text {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #333333;
+        }
+    }
+
+    &-comments {
+        width: 458px;
+        margin-left: 20px;
+    }
+
+    &-form {
+        margin-bottom: 20px;
+    }
+
+    &-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-label {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: #cccccc;
+        padding-bottom: 5px;
+    }
+
+    &-textarea {
+        margin-bottom: 10px;
+        height: 75px;
+    }
+
+    &-comment {
+        margin-top: 20px;
+        &-item {
+            margin-bottom: 20px;
+        }
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 5px;
+        }
+        
+        &-name {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #cccccc;
+        }
+
+        &-text {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #333333;
+        }
+
+        &-delete {
+            cursor: pointer;
+            border: none;
+            background-color: white;
+            color: #FF6161;
+        }
+    }
+
+    &-nocomment {
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+}

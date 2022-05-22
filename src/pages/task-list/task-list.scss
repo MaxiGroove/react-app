@@ -1,0 +1,43 @@
+.task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-wrapper {
+        width: 1280px;
+    }
+
+    &-container {
+        margin: 30px 0;
+        padding: 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 5px 3px #B5B5B5;
+        border-radius: 5px;
+    }
+
+    &-input {
+        width: 527px;
+        height: 24px;
+    }
+
+    &-sort {
+        padding-bottom: 25px;
+
+        &-form {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &-items {
+        box-shadow: inset 0px 0px 2px 1px #B5B5B5;
+        border-radius: 5px;
+        padding: 1px;
+    }
+
+    &-notask {
+        text-align: center;
+        padding: 50px;
+        font-size: 5rem;
+    }
+}
